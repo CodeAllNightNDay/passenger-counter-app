@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passener Counter</title>
+    <link rel="stylesheet" href="css/syles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <a href="index.html"
+        ><img id="logo" src="/images/logo_3x.png" alt="Mars Station Logo"
+      /></a>
+      <!---->
+      <nav>
+        <ul id="navigation">
+          <li>Home</li>
+          <li>About</li>
+          <li>Routes</li>
+          <li>Tickets</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Counter App Section -->
+    <main>
+      <section id="counter">
+        <div id="counter-content">
+          <h1>Passengers Entered</h1>
+          <h2 id="passenger-count">0</h2>
+          <div id="btn-group">
+            <button
+              id="increment-btn"
+              class="passenger-btn"
+              onclick="increment()"
+            >
+              Add Passenger
+            </button>
+            <button id="save-btn" class="passenger-btn" onclick="save()">
+              Save
+            </button>
+          </div>
+          <p id="save-el">Previous entries:</p>
+          <button id="reset-btn" class="passenger-btn" onclick="reset()">
+            Reset
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+
+    <div id="footer">
+      <!-- Footer Column 1-->
+
+      <div class="col-1 column">
+        <h3 class="footer-title">Contact Us</h3>
+        <p>Red Dune Station</p>
+        <p>42 Olympus Mons Avenue</p>
+        <p>Valles Marineris City</p>
+        <p>Mars, 2105</p>
+      </div>
+
+      <!-- Footer Column 2-->
+
+      <div class="col-2 column">
+        <h3 class="footer-title">Stay Connected</h3>
+        <form action="">
+          <input
+            id="subscriber-name"
+            type="text"
+            placeholder="Enter name..."
+            required
+          />
+          <input
+            id="subscriber-email"
+            type="email"
+            placeholder="Enter email..."
+            required
+          />
+          <button id="subscribe-btn" class="passenger-btn" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Footer Column 3-->
+
+      <div class="col-3 column">
+        <h3 id="social-title" class="footer-title">Social</h3>
+        <div id="sol-col-icons">
+          <a href="https://www.tumblr.com/" target="_blank">
+            <img
+              class="social-icons"
+              src="/images/tumblr_logo_white.png"
+              alt="Tumblr"
+            />
+          </a>
+          <a href="https://www.tumblr.com/" target="_blank">
+            <img
+              class="social-icons"
+              src="/images/Asset 1@2x.png"
+              alt="Interstellar Social"
+            />
+          </a>
+          <a href="https://www.tumblr.com/" target="_blank">
+            <img
+              class="social-icons"
+              src="/images/Instagram_Glyph_White.svg"
+              alt="Interstellar Social"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
